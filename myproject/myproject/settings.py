@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': BASE_DIR / 'user_postgresql_lessons',
-        'HOSTNAME': 'dpg-d102qme3jp1c739ieaq0-a'
-        'USERNAME': 'user_postgresql_lessons_user'
+        'HOST': 'dpg-d102qme3jp1c739ieaq0-a'
+        'USER': 'user_postgresql_lessons_user'
         'PASSWORD': 'w1utx8ESeUoBiCEVW5xwJfzJRYThhLls'
         'PORT': 5432
     }
