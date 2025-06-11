@@ -7,4 +7,15 @@
 {% block content %}
     <h1>About</h1>
     <p>Check out my <a href="/">Home</a> page.</p>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" class="form-control"><br>
+            <input type="email" name="email" placeholder="Your Email" class="form-control"><br>
+            <textarea name="message" placeholder="Your Message" class="form-control"></textarea><br>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
 {% endblock %}

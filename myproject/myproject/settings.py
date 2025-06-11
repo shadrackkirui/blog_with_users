@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY') #'3^_%5qt($2m$h6($je(d$kf&pu%@p7i6r+0na@mlpv!ms#8k15'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'posts',
     'users',
+    'contact',
+    'portfolio',
 ]
 
 MIDDLEWARE = [
@@ -93,6 +95,13 @@ DATABASES = {
         ssl_require=False  # Disable SSL for free plan
     )
 }
+#sqldbalternative
+#DATABASES = {
+   # 'default': {
+       # 'ENGINE': 'django.db.backends.sqlite3',
+       # 'NAME': BASE_DIR / 'db.sqlite3',
+    #}
+#}
 
 # Password validation sectiom
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
